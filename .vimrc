@@ -6,6 +6,7 @@ syntax on
 filetype on
 filetype indent plugin on
 
+set number
 set modeline
 set background=dark
 set wildmode=longest,list,full
@@ -25,7 +26,14 @@ let g:SuperTabDefaultCompletionType = "context"
 
 "key mappings"
 inoremap jk <ESC>
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
 
 "plugin mappings"
 nnoremap <F5> :GundoToggle<CR>
-map <C-n> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
+
+"python syntax enable"
+let python_version_2 = 1
