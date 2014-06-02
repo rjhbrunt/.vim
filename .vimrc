@@ -11,7 +11,6 @@ set modeline
 set background=dark
 set wildmode=longest,list,full
 set wildmenu
-let mapleader=","
 set splitbelow
 set splitright
 
@@ -21,6 +20,14 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set autoindent
+
+"folding"
+set foldmethod=indent
+set foldnestmax=2
+nnoremap f za
+nnoremap F zO
+:hi Folded ctermfg=3
+
 
 "supertab python completion"
 au FileType python set omnifunc=pythoncomplete#Complete
@@ -47,10 +54,12 @@ nnoremap <C-down> :resize -5<CR>
 "plugin mappings"
 nnoremap <F5> :GundoToggle<CR>
 map <C-t> :NERDTreeToggle<CR>
-map <C-g> :ConqueTerm bash<CR>
+map <F7> :ConqueTerm bash<CR>
 
 "python syntax enable"
 let python_version_2 = 1
+"enable python syntax for .ipy files"
+au BufRead,BufNewFile *.ipy set filetype=python
 
 "conque term settings"
 let g:ConqueTerm_PyVersion = 2
