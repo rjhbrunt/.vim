@@ -54,7 +54,7 @@ nnoremap <C-down> :resize -5<CR>
 "plugin mappings"
 nnoremap <F5> :GundoToggle<CR>
 map <C-t> :NERDTreeToggle<CR>
-map <F7> :ConqueTerm bash<CR>
+map <F6> :ConqueTerm bash<CR>
 
 "python syntax enable"
 let python_version_2 = 1
