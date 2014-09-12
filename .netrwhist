@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/rbrunt/Desktop'
 let g:netrw_dirhist_2='/home/rbrunt/projects/auto_coding/src'
 let g:netrw_dirhist_3='/home/rbrunt/misc/learn_decorators/savvy_mail/savvy_mail'
+let g:netrw_dirhist_4='/home/rbrunt/pyston_deps/llvm-trunk-build'
+let g:netrw_dirhist_5='/home/rbrunt/misc/config_files'
+let g:netrw_dirhist_6='/home/rbrunt/pydev/ipyLab/templates'

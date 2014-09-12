@@ -67,6 +67,11 @@ let g:ConqueTerm_PyVersion = 2
 "auto change directory for each local buffer"
 autocmd BufEnter * silent! lcd %:p:h
 
+"better pasting into terminal"
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 "cygwin cursor settings (must remove if not using cygwin)"
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
